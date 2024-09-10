@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="//shopper-theme.myshopify.com/cdn/shop/files/favicon_32x32.png?v=1614307709"
+        type="image/png">
+    <title>Elite Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/a64a3f1332.js" crossorigin="anonymous"></script>
+    <div class="page">
+        <!-- header row -->
+        <div id="loading">
+            <img src="./loading.webp" alt="loading......">
+        </div>
+        <div class="fix">
+            <div class="head">
+                <div class="head_content">
+                    <p>Free shipping • Free 30 days return • Express delivery</p>
+                </div>
+                <ul class="right">
+                    <li><img src="./flag.jpg" alt="flag"></li>
+                    <li id="Accounts" style="border-left: 1px solid white;"><a id="account" onclick="loading()"
+                            href="./accountpage.html">My Accounts</a></li>
+                    <li style="border-left: 1px solid white;">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">JPN</a></li>
+                                <li><a class="dropdown-item" href="#">BAN</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- navbar row -->
+            <nav>
+                <div class="bar" id="bar">
+                    <i id="bar-icon" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="./head.webp" alt="logo">
+                </div>
+                <ul id="nav-list">
+                    <li><a onclick="loading()" href="./index.html">HOME</a></li>
+                    <li><a onclick="loading()" href="./shop.html">SHOP</a></li>
+                    <li><a onclick="loading()" href="./about.html">ABOUT</a></li>
+
+                    <li><a onclick="loading()" href="#">CONTACT US</a></li>
+                    <li><a id="wish" onclick="wish()" href="#">WISHLIST</a></li>
+
+                </ul>
+                <div class="icons">
+                    <div class="search-icon" id="search-icon">
+                        <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div id="shop-notifie" class="shop-notifie">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>CART <span id="order">0</span></p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Responsive menu -->
+        <div class="menu" id="menulist">
+            <i id="menu-cancel" class="fa-solid fa-xmark"></i>
+            <ul>
+                <li><a onclick="loading()" href="./index.html">HOME</a></li>
+                <li><a onclick="loading()" href="./shop.html">SHOP</a></li>
+                <li><a onclick="loading()" href="./about.html">ABOUT</a></li>
+
+                <li><a href="#">CONTACT US</a></li>
+                <li><a onclick="wish()" href="#">WISHLIST</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- search division -->
+        <div class="search-div" id="search-div">
+            <input type="text" placeholder="Search our store">
+            <i id="close" class="fa-solid fa-xmark"></i>
+        </div>
+
+        <!-- cart division -->
+        <div id="cart" class="cart">
+            <i id="cancel" class="fa-solid fa-xmark"></i>
+            <i id="shop" class="fa-solid fa-cart-shopping"></i>
+            <p>Your Cart is now empty</p>
+            <button>Shop Now</button>
+
+          
+        </div>
+
+
+        <!-- wishlist  -->
+        <div class="overlay" id="overlay">
+
+        </div>
+        <div class="wishlist" id="wishlist">
+            <div class="head">
+                <h2>My Wishlist</h2>
+                <div class="side">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i id="back" style="margin-left: 25px;" class="fa-solid fa-x"></i>
+                </div>
+
+            </div>
+            <div class="content">
+                <h2>Love It? Add to My Wishlist</h2>
+                <p>My Wishlist allows you to keep track of all of your favorites and shopping activity whether you're on
+                    your computer, phone, or tablet. You won't have to waste time searching all over again for that item
+                    you loved on your phone the other day - it's all here in one place!</p>
+                <button onclick="wish()">Continue shopping</button>
+            </div>
+
+        </div>
+
+        <!-- carousel -->
+        <div class="carousel">
+            <div class="para">
+                <h2>For Men's</h2>
+                <h1>High Quality Converse</h1>
+                <h2>for only $59.00</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae debitis recusandae
+                    dignissimos!</p> <br>
+                <a href="./product1.html">SHOP NOW</a>
+            </div>
+            <img src="./shoes.webp" alt="">
+        </div>
+
+        <!-- Categories division -->
+        <div class="Categories">
+            <div class="header">
+                <h1>Top Categories</h1>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="line1">
+                        <img src="./glass.webp" alt="">
+                    </div>
+                    <div class="line2">
+                        <div class="im">
+                            <img src="./men1.webp" alt="">
+                        </div>
+                        <div class="im">
+                            <img src="./men2.webp" alt="">
+                        </div>
+                        <div class="im">
+                            <img src="./men3.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="line3">
+                        <p>Mens</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="line1">
+                        <img src="./blabag.webp" alt="">
+                    </div>
+                    <div class="line2">
+                        <div class="im">
+                            <img src="./access1.webp" alt="">
+                        </div>
+                        <div class="im">
+                            <img src="access2.webp" alt="">
+                        </div>
+                        <div class="im">
+                            <img src="access3.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="line3">
+                        <p>Accessories</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="line1">
+                        <img src="./women.webp" alt="">
+                    </div>
+                    <div class="line2">
+                        <div class="im">
+                            <img src="./women.webp" alt="">
+                        </div>
+                        <div class="im">
+                            <img src="access2.webp" alt="">
+                        </div>
+                        <div class="im">
+                            <img src="access3.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="line3">
+                        <p>Womens</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- sale division -->
+        <div class="sale">
+            <h3>End of Season Sale</h3>
+            <p>Take 25% off all sweaters and knits. Discount applied at checkout.</p>
+            <a href="./shop.html">SHOP NOW</a>
+        </div>
+        <!-- collection division -->
+        <div class="collection">
+            <h1>Top Collection</h1>
+            <div class="coll-row" id="coll-row">
+                <div class="coll" id="coll">
+                    <div class="image">
+                        <img class="pro-img" src="./glass.webp" alt="">
+                        <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                        <div class="add">
+                            <button class="glass" id="btn">ADD TO CART</button>
+                        </div>
+                      
+                    </div>
+                    <p class="title" id="title">Folded Vase Glasse</p>
+                    <h4 class="price">$199.99</h4>
+               
+                </div>
+
+                <div class="coll" id="coll">
+                    <div class="image">
+                        <img class="pro-img" src="./men1.webp" alt="">
+                        <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                        <div class="add">
+                            <button class="glass" id="btn">ADD TO CART</button>
+                        </div>
+                      
+                    </div>
+                    <p class="title" id="title">Hidden Denim Jacket</p>
+                    <h4 class="price">$79.99</h4>
+               
+                </div>
+
+                <div class="coll" id="coll">
+                    <div class="image">
+                        <img class="pro-img" src="./men2.webp" alt="">
+                        <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                        <div class="add">
+                            <button class="glass" id="btn">ADD TO CART</button>
+                        </div>
+                      
+                    </div>
+                    <p class="title" id="title">Denim Jacket Soft</p>
+                    <h4 class="price">$390.00 <del>$430.00</del></h4>
+               
+                </div>
+
+                <div class="coll" id="coll">
+                    <div class="image">
+                        <img class="pro-img" src="./men3.webp" alt="">
+                        <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+                        <div class="add">
+                            <button class="glass" id="btn">ADD TO CART</button>
+                        </div>
+                      
+                    </div>
+                    <p class="title" id="title">Striped Workshirt</p>
+                    <h4 class="price">$79.00<h4>
+               
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Deal of the day -->
+        <div class="deal">
+            <div class="left">
+                <h1>Deal of the day</h1>
+                <p>Get at discounted price!</p>
+                <br>
+                <p>The countdown is finished!</p>
+                <a href="./product1.html">Shop Now</a>
+
+            </div>
+            <div class="right">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <img src="./shoes2.webp" alt="">
+            </div>
+        </div>
+        <!-- follow -->
+        <div class="follow">
+            <div class="row1">
+                <h2>Follow Us On Instagram</h2>
+                <p>@ Occaecat Cupidatat</p>
+            </div>
+            <div class="row2">
+                <div class="box1">
+                    <div class="box">
+                        <i class="fa-solid fa-truck"></i>
+                        <div class="cont">
+                            <h4>Free Shipping</h4>
+                            <p>Free shipping on oder over <br>
+                                $70</p>
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div class="cont">
+                            <h4>Secure Payment</h4>
+                            <p>We ensure secure payment <br>
+                                with PEV
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="box">
+                        <i class="fa-solid fa-clock"></i>
+                        <div class="cont">
+                            <h4>Support 24/7</h4>
+                            <p>Contact us 24 hours a day, <br>
+                                7 days a week</p>
+                        </div>
+
+
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-recycle"></i>
+                        <div class="cont">
+                            <h4>30 Days Return</h4>
+                            <p>Simply return it within 30 <br>
+                                days for an exchange.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- newsletter -->
+        <div class="news">
+            <h2>Our Newsletter</h2>
+            <p>Subscribe to our Newsletter to receive early discount offers</p>
+            <div class="search">
+                <input type="text" placeholder="Enter your email">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="top">
+                <div class="box" id="addres">
+                    <h2>Contact</h2>
+                    <p>20464 Hirthe Curve Suite, <br>
+                        Emardton, <br>
+                        CT 12471-4107</p>
+                    <p>+5(305) 785-0437</p>
+                    <p>info@example.com</p>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-instagram"></i>
+
+                </div>
+                <div class="box" id="addres2">
+                    <h2>Category</h2>
+                    <a href="#">Men</a> <br> <br>
+                    <a href="#">Women</a> <br> <br>
+                    <a href="#">Women</a> <br> <br>
+                    <a href="#">Top Collections</a> <br> <br>
+                    <a href="#">Accessories</a>
+
+                </div>
+                <div class="box">
+                    <h2>Useful Link</h2>
+                    <a href="#">Privacy Policy</a> <br> <br>
+                    <a href="#">Terms & Conditions</a> <br> <br>
+                    <a href="#">Cookie Policy</a> <br> <br>
+                    <a href="#">Terms of Sale</a> <br> <br>
+                    <a href="#">Free Shipping & Returns </a> <br> <br>
+                    <a href="#">FAQs</a>
+
+                </div>
+                <div class="box">
+                    <h2>Our Policies</h2>
+                    <a href="#">Privacy Policy</a> <br> <br>
+                    <a href="#">Terms & Conditions</a> <br> <br>
+                    <a href="#">Cookie Policy</a> <br> <br>
+                    <a href="#">Terms of Sale</a> <br> <br>
+                    <a href="#">Free Shipping & Returns </a> <br> <br>
+                    <a href="#">FAQs</a>
+
+                </div>
+            </div>
+            <div class="bottum">
+                <p>copyright © 2019 a shopify theme by themefisher.com</p>
+                <div class="logo">
+                    <img src="./head.webp" alt="">
+                </div>
+                <div class="last">
+                    <img src="./card1.jpg" alt="">
+                    <img src="./card2.jpg" alt="">
+                    <img src="./card3.jpg" alt="">
+                    <img src="./card4.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="./script.js"></script>
+    <script src="./loading.js"></script>
+</body>
+
+</html>
